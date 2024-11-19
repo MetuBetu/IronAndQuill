@@ -1,2 +1,2 @@
 affirmTest = True
-affirm affirmTest = True
+affirm affirmTest == True
