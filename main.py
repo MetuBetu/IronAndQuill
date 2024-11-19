@@ -5,4 +5,5 @@ except ImportError:
     os.system("pip install pytest")
     import pytest
 
-assert 1 == 1
+def testofthetesting():
+    assert 1 == 1
