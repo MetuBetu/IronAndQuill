@@ -13,8 +13,6 @@ jobs:
       image: python:3
     steps:
       - uses: actions/checkout@v3
-        with:
-          python-version: 3
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
+      - run: pip install pytest
+      - run: python3 main.py
+      - run: pytest main.py
