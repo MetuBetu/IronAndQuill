@@ -8,6 +8,14 @@ except ImportError:
     os.system("pip install termcolor")
     from termcolor import cprint
 
+try:
+    import pytest
+except ImportError:
+    os.system("pip install pytest")
+    import pytest
+
+assert 1 == 1
+
 # Import / download modules above!
 clear()
 
